@@ -1,0 +1,35 @@
+[user]
+	name = Nícolas Lazarte Kaqui
+  email = nicolaslazartekaqui@gmail.com
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  grep = auto
+  ui = auto
+  pager = 1
+[color "decorate"]
+  branch = 1
+[difftool]
+  tool = vimdiff
+  prompt = false
+[core]
+  editor = /usr/bin/vim
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
+[help]
+  format = web
+  browser = gc
+  autocorrect = 1
+[browser "gc"]
+  cmd = google-chrome %s
+
