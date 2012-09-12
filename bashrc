@@ -5,7 +5,6 @@ fi
 
 # color terminal
 force_color_prompt=yes
-export TERM=screen-256color
 
 # colors
 BLUE='\[\e[1;34m\]'
