@@ -7,3 +7,6 @@
     ln -s ~/.dotfiles/bashrc .bashrc
     ln -s ~/.dotfiles/fonts/ .fonts
     ln -s ~/.dotfiles/my.cnf .my.cnf
+    ln -s ~/.dotfiles/gemrc .gemrc
+    ln -s ~/.dotfiles/irbrc .irbrc
+    ln -s ~/.dotfiles/profile .profile
