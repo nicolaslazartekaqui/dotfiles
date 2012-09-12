@@ -3,30 +3,17 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
-# color terminal
-force_color_prompt=yes
-
 # colors
 BLUE='\[\e[1;34m\]'
 WHITE='\[\e[0m\]'
 GREEN='\[\e[1;32m\]'
 PURPLE='\[\e[1;35m\]'
 
-# rbenv
-eval "$(rbenv init -)"
-
-# rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
 # git
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWSTASHSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWUPSTREAM=auto
-
-# prompt
-export PS1="$GREEN\h: $BLUE\w$PURPLE\$(__git_ps1) 
-$WHITE→ "
 
 # history settings
 HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
@@ -44,3 +31,21 @@ shopt -s checkwinsize
 [[ `which brew` && -f `brew --prefix`/etc/bash_completion ]] &&
   . `brew --prefix`/etc/bash_completion
 
+# rbenv
+eval "$(rbenv init -)"
+
+# rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+# prompt
+PS1="$GREEN\u@\h: $BLUE\w$PURPLE\$(__git_ps1) 
+$WHITE→ "
+
+# alter terminal title
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
