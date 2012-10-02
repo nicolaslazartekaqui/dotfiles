@@ -24,6 +24,7 @@
   co = checkout
   df = diff
   l = log --oneline --decorate=full
+  ld = log --pretty=medium --abbrev-commit --color --decorate --name-status --date=iso
   lg = log -p
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
