@@ -5,7 +5,19 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 
-# greps
+# grep
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
+
+# git
+alias ga='git add'
+alias gb='git branch'
+alias gdiff='git df'
+alias gmv='git mv'
+alias grm='git rm'
+alias ci='git ci'
+alias co='git checkout'
+alias s='git s'
+alias pull='git pull'
+alias push='git push'
