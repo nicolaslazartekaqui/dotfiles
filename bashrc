@@ -38,7 +38,7 @@ eval "$(rbenv init -)"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # prompt
-PS1="$GREEN\h: $BLUE\W$PURPLE\$(__git_ps1)$WHITE"
+PS1="$GREEN\h: $BLUE\W$PURPLE\$(__git_ps1)$WHITE "
 
 # alter terminal title
 case "$TERM" in
