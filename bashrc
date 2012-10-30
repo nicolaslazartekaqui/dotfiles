@@ -7,7 +7,7 @@ fi
 BLUE='\[\e[1;34m\]'
 WHITE='\[\e[0m\]'
 GREEN='\[\e[1;32m\]'
-PURPLE='\[\e[1;35m\]'
+PURPLE='\[\e[1;31m\]'
 
 # git
 export GIT_PS1_SHOWDIRTYSTATE=true
@@ -38,8 +38,7 @@ eval "$(rbenv init -)"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # prompt
-PS1="$GREEN\u@\h: $BLUE\w$PURPLE\$(__git_ps1) 
-$WHITE→ "
+PS1="$GREEN\h: $BLUE\W$PURPLE\$(__git_ps1)$WHITE"
 
 # alter terminal title
 case "$TERM" in
