@@ -8,5 +8,9 @@ alias fgrep='fgrep --colour=auto'
 alias l='ls -l'
 alias la='ls -la'
 
+# others
 alias r='rails'
+alias be='bundle exec'
 alias g='git'
+alias gs='git s'
+alias up='sudo aptitude update; sudo aptitude upgrade'
