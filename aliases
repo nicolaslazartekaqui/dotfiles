@@ -6,6 +6,7 @@ alias fgrep='fgrep --colour=auto'
 
 # list
 alias l='ls -l'
+alias ll='ls -l'
 alias la='ls -la'
 
 # others
