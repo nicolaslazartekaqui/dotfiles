@@ -11,3 +11,4 @@
     ln -s ~/.dotfiles/irbrc .irbrc
     ln -s ~/.dotfiles/profile .profile
     ln -s ~/.dotfiles/themes .themes
+    ln -s ~/.dotfiles/icons .icons
