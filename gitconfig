@@ -29,6 +29,7 @@
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
+	stash-unapply = !git stash show -p | git apply -R
 [help]
   format = web
   browser = gc
