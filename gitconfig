@@ -45,6 +45,7 @@
   p = push
   pu = push -u
   pl = pull
+  pb = pull --rebase
   pr = pull-request
   r = reset
   rb = rebase
