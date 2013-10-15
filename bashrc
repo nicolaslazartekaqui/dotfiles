@@ -8,6 +8,7 @@ BLUE='\[\e[1;34m\]'
 WHITE='\[\e[0m\]'
 GREEN='\[\e[1;32m\]'
 PURPLE='\[\e[1;31m\]'
+BWHITE='\[\e[1;0m\]'
 
 # git
 export GIT_PS1_SHOWDIRTYSTATE=true
@@ -22,7 +23,7 @@ HISTFILESIZE=10000000000
 HISTSIZE=1000000
 
 # cd path
-CDPATH=".:~:~/Projects"
+CDPATH=".:~:~/Projects:~/outofcloud"
 
 # append to the history
 shopt -s histappend
@@ -41,7 +42,7 @@ eval "$(rbenv init -)"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # prompt
-PS1="$GREEN\h: $BLUE\W$PURPLE\$(__git_ps1)$WHITE "
+PS1="$BWHITE\h: $BLUE\W$PURPLE\$(__git_ps1)$WHITE "
 
 # alter terminal title
 case "$TERM" in
@@ -51,3 +52,6 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+# define vim como editor padrão
+export EDITOR='vim'

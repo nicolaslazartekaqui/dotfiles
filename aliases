@@ -9,9 +9,13 @@ alias l='ls -l'
 alias ll='ls -l'
 alias la='ls -la'
 
+#bundle exec
+alias rails='bundle exec rails'
+alias rake='bundle exec rake'
+alias rspec='bundle exec rspec'
+alias rspecs='SCREENSHOT=true rspec'
+
 # others
 alias r='rails'
-alias be='bundle exec'
 alias g='git'
-alias gs='git s'
-alias up='sudo aptitude update; sudo aptitude upgrade'
+alias h='hub'
