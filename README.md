@@ -12,3 +12,4 @@
     ln -s ~/.dotfiles/profile .profile
     ln -s ~/.dotfiles/themes .themes
     ln -s ~/.dotfiles/icons .icons
+    ln -s ~/.dotfiles/psqlrc .psqlrc

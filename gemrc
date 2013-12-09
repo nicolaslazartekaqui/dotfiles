@@ -7,5 +7,4 @@
 - http://gems.rubyforge.org/
 - http://gems.github.com/
 :bulk_threshold: 1000
-:verbose: true
 gem: --no-ri --no-rdoc

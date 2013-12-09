@@ -23,7 +23,7 @@ HISTFILESIZE=10000000000
 HISTSIZE=1000000
 
 # cd path
-CDPATH=".:~:~/Projects:~/outofcloud"
+CDPATH=".:~:~/Dropbox/projects:~/projects"
 
 # append to the history
 shopt -s histappend

@@ -32,6 +32,7 @@
   l = log --oneline --decorate=full
   ls = ls-files
   p = push
+  pf = push -f
   pu = push -u
   pl = pull
   plr = pull --rebase
@@ -40,8 +41,8 @@
   s = status -sb
   st = status
   ss = stash
-  sa = stash apply
-  sp = stash pop
+  ssl = stash list
+  ssa = stash pop
 [merge]
   tool = vimdiff
 [help]

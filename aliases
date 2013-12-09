@@ -19,3 +19,6 @@ alias rspecs='SCREENSHOT=true rspec'
 alias r='rails'
 alias g='git'
 alias h='hub'
+
+# postgres (using old)
+alias psql8='psql -p 5433'
