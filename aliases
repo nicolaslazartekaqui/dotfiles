@@ -10,13 +10,12 @@ alias ll='ls -l'
 alias la='ls -la'
 
 #bundle exec
-alias rails='bundle exec rails'
 alias rake='bundle exec rake'
 alias rspec='bundle exec rspec'
 alias rspecs='SCREENSHOT=true rspec'
 
 # others
-alias r='rails'
+alias r='bundle exec rails'
 alias g='git'
 alias h='hub'
 
