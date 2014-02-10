@@ -1,16 +1,19 @@
-# list
-alias l='ls -l'
+alias l='ls -A'
 alias ll='ls -l'
-alias la='ls -la'
+alias la='ls -lA'
 
-#bundle exec
-alias berake='bundle exec rake'
-alias berspec='bundle exec rspec'
-alias berails='bundle exec rails'
+alias ..='cd ..'
+alias ...='cd ../..'
 
-# others
+alias be='bundle exec'
+
 alias g='git'
 alias h='hub'
+alias v='vim'
+alias h='history'
+alias r='rails'
 
-# integra
-alias erspec='SCREENSHOT=true berspec'
+alias RET='RAILS_ENV=teste'
+alias REP='RAILS_ENV=production'
+
+alias rspecs='SCREENSHOT=true berspec'

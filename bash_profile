@@ -1,22 +1,21 @@
-export DOTFILES=$HOME/.dotfiles
-
-export projects=$HOME/Projects
-
+# default editor
 export EDITOR='vim'
 
-# Optimize ruby garbage collector
+# optimize ruby garbage collector
 RUBY_HEAP_MIN_SLOTS=600000
 RUBY_GC_MALLOC_LIMIT=59000000
 RUBY_HEAP_FREE_MIN=100000
 
-# Colors to ls
+# colors to ls
 export CLICOLOR=1
 
-# History
+# history
 export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
 export HISTCONTROL=ignoreboth
 export HISTFILESIZE=10000000000
 export HISTSIZE=1000000
+
+shopt -s histappend
 
 # git stuff for prompt
 export GIT_PS1_SHOWDIRTYSTATE=true
@@ -24,20 +23,25 @@ export GIT_PS1_SHOWSTASHSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWUPSTREAM=true
 
-export CDPATH=".:~:~/Dropbox/projects:~/projects"
+# add path to projects in cd
+export CDPATH=".:~:~/Dropbox/projects:~/Projects"
 
+# add local bin in path
 export PATH=/usr/local/bin:$PATH
 
+# load aliases
+export DOTFILES=$HOME/.dotfiles
 source $DOTFILES/aliases
 
+# bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
 
+# rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-shopt -s histappend
-
+# prompt
 build_ps1() {
   local blue='\[\e[0;34m\]'
   local red='\[\e[0;31m\]'
@@ -54,4 +58,5 @@ build_ps1() {
   export PS1="$pwd_ps1$git_ps1 $prompt_ps1 $reset"
 }; build_ps1
 
+# use sessions in terminal
 TERM=xterm; export TERM

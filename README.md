@@ -8,6 +8,7 @@
     ln -s ~/.dotfiles/irbrc .irbrc
     ln -s ~/.dotfiles/my.cnf .my.cnf
     ln -s ~/.dotfiles/psqlrc .psqlrc
+    ln -s ~/.dotfiles/hushlogin .hushlogin
 
 ## Install fonts
     cp -r .dotfiles/fonts/* Library/Fonts/

@@ -22,8 +22,10 @@
   prompt = false
 [alias]
   a = add
+  aa = add -A
   b = branch
   c = commit
+  cm = commit -m
   cam = commit -a -m
   co = checkout
   cp = cherry-pick
@@ -51,3 +53,6 @@
   date = local
 [credential]
   helper = cache --timeout=7200
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
