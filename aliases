@@ -1,23 +1,16 @@
-# color
-alias ls='ls --color=auto'
-alias grep='grep --colour=auto'
-alias egrep='egrep --colour=auto'
-alias fgrep='fgrep --colour=auto'
-
 # list
 alias l='ls -l'
 alias ll='ls -l'
 alias la='ls -la'
 
 #bundle exec
-alias rake='bundle exec rake'
-alias rspec='bundle exec rspec'
-alias rspecs='SCREENSHOT=true rspec'
+alias berake='bundle exec rake'
+alias berspec='bundle exec rspec'
+alias berails='bundle exec rails'
 
 # others
-alias r='bundle exec rails'
 alias g='git'
 alias h='hub'
 
-# postgres (using old)
-alias psql8='psql -p 5433'
+# integra
+alias erspec='SCREENSHOT=true berspec'
