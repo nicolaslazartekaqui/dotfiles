@@ -17,3 +17,5 @@ alias RET='RAILS_ENV=teste'
 alias REP='RAILS_ENV=production'
 
 alias rspecs='SCREENSHOT=true berspec'
+
+alias mysql='mysql -u nicolas'
