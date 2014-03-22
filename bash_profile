@@ -9,6 +9,8 @@ RUBY_HEAP_FREE_MIN=100000
 # colors to ls
 export CLICOLOR=1
 
+export GREP_OPTIONS="--color=auto"
+
 # history
 export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
 export HISTCONTROL=ignoreboth
@@ -60,3 +62,6 @@ build_ps1() {
 
 # use sessions in terminal
 TERM=xterm; export TERM
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

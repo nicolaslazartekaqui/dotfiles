@@ -13,9 +13,13 @@ alias v='vim'
 alias h='history'
 alias r='rails'
 
-alias RET='RAILS_ENV=teste'
+alias RET='RAILS_ENV=test'
 alias REP='RAILS_ENV=production'
 
-alias rspecs='SCREENSHOT=true berspec'
+alias rspecs='SCREENSHOT=true be rspec'
 
 alias mysql='mysql -u nicolas'
+
+alias macvim='open -a /Applications/MacVim.app .'
+
+alias grep='ggrep'
