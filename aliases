@@ -20,6 +20,4 @@ alias rspecs='SCREENSHOT=true be rspec'
 
 alias mysql='mysql -u nicolas'
 
-alias macvim='open -a /Applications/MacVim.app .'
-
-alias grep='ggrep'
+alias grep='ggrep --color=auto'

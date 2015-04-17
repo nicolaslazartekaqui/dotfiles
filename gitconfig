@@ -1,25 +1,40 @@
 [user]
   name = Nícolas Lazarte Kaqui
   email = nicolaslazartekaqui@gmail.com
-[core]
-  editor = `which vim`
-  whitespace = trailing-space,space-before-tab,indent-with-non-tab,cr-at-eol
-[push]
-  default = current
-[pull]
-  rebase = true
-[help]
-  autocorrect = 1
 [color]
-  branch = true
+  branch = auto
   diff = auto
   interactive = auto
   status = auto
   grep = auto
   ui = auto
+[core]
+  editor = `which vim`
+  whitespace = trailing-space,space-before-tab,cr-at-eol
+[credential]
+  helper = cache --timeout=7200
+[diff]
+  tool = mvimdiff
+[difftool "mvimdiff"]
+  cmd = mvim -f -d \"$LOCAL\" \"$REMOTE\"
 [difftool]
-  tool = vimdiff
   prompt = false
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[grep]
+  extendRegexp = true
+  lineNumber = true
+[help]
+  autocorrect = 1
+[log]
+  date = local
+[merge]
+  ff = false
+[push]
+  default = current
+[pull]
+  rebase = true
 [alias]
   a = add
   aa = add -A
@@ -27,6 +42,7 @@
   c = commit
   cm = commit -m
   cam = commit -a -m
+  camend = commit --amend
   co = checkout
   cp = cherry-pick
   d = diff
@@ -35,7 +51,6 @@
   f = fetch
   l = !git --no-pager log -20 --pretty=format:'%Cred%h%Creset - %C(yellow)%an%Cgreen(%cr)%Creset %s%Creset -%Cblue%d%Creset'
   lp = log --pretty=format:'%Cred%h%Creset - %C(yellow)%an%Cgreen(%cd)%Creset %s%Creset -%Cblue%d%Creset' --date=short
-  ba = branch -a
   ll = log --oneline --decorate=full
   p = push
   pf = push -f
@@ -49,10 +64,3 @@
   ssl = stash list
   ssa = stash pop
   tree = log --pretty=format:'%Cred%h%Creset - %C(yellow)%an%Cgreen(%cr)%Creset - %s%Creset' --graph
-[log]
-  date = local
-[credential]
-  helper = cache --timeout=7200
-[filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
